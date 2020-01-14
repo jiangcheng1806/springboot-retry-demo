@@ -38,7 +38,8 @@ public class RetryService {
     }
 
     @Recover
-    public void recover(Exception e){
+    public int recover(IllegalArgumentException e){
         logger.warn("减库存失败！！！" + LocalTime.now());
+        return 0;
     }
 }

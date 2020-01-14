@@ -10,7 +10,7 @@ public class RetryServiceTest extends BaseTest {
 
     @Test
     public void retry(){
-        int count = retryService.retry(1);
+        int count = retryService.retry(-1);
         System.out.println("库存为 : " + count);
     }
 }
